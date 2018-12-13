@@ -10,7 +10,9 @@ namespace base64
     {
         static void Main(string[] args)
         {
-            string plainText = "Man";
+            string plainText;
+            Console.WriteLine("inserire una stringa");
+            plainText = Convert.ToString(Console.ReadLine());
             string base64EncodedData;
             var PlainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             for(int i = 0; i < PlainTextBytes.Length; i++)
