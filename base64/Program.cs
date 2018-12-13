@@ -14,7 +14,7 @@ namespace base64
             Console.WriteLine("inserire una stringa");
             plainText = Convert.ToString(Console.ReadLine());
             string base64EncodedData;
-            var PlainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            byte[] PlainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             for(int i = 0; i < PlainTextBytes.Length; i++)
             {
                 Console.WriteLine(PlainTextBytes[i]);
