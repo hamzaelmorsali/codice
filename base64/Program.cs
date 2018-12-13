@@ -22,10 +22,18 @@ namespace base64
 
             }
             base64EncodedData = Convert.ToBase64String(PlainTextBytes);
-            Console.WriteLine(base64EncodedData);
+            
             var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
             plainText = System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
-            Console.WriteLine(plainText);
+            Console.WriteLine($"la codifica in base 64 della stringa {plainText} è {base64EncodedData}");
+            //da ascii a lettera 
+            Console.WriteLine(" ");
+            int a = 0;
+            char conversione;
+            Console.WriteLine("inserire un valore");
+            a = Convert.ToInt32(Console.ReadLine());
+            conversione = Convert.ToChar(a);
+            Console.WriteLine($"il numero {a} convertito in ascii è {conversione}");
             Console.ReadLine();
         }
     }
