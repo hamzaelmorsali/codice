@@ -35,6 +35,6 @@ namespace base64
             conversione = Convert.ToChar(a);
             Console.WriteLine($"il numero {a} convertito in ascii è {conversione}");
             Console.ReadLine();
-        }
+        
     }
 }
